@@ -12,7 +12,7 @@
   :author ""
   :license ""
   :depends-on (:restas)
-  :components (:file "sandstone")
+  :components ((:file "sandstone"))
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
