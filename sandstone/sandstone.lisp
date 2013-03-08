@@ -8,4 +8,4 @@
      (:body
       
       (:h1 :id "heading" "Hello World")
-      (:p :class "message"  "Hi everyone")))))
+      (:p :class "message"  "Hi everyone.")))))
