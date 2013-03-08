@@ -11,7 +11,8 @@
   :version "0.1"
   :author ""
   :license ""
-  :depends-on (:restas)
+  :depends-on (:restas 
+	       :cl-who)
   :components ((:file "sandstone"))
   :description ""
   :long-description
