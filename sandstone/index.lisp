@@ -11,5 +11,8 @@
       (:hr)    
       (:h1 :id "heading" "Hello Lisp World")
       (:p :class "message"  "Hi everybody, we have success at last. I've made restas run on Heroku.")
-      (:p (who:fmt "~s  ~a" arg1 arg2))
+      (:p (who:fmt "~s ~s" arg1 arg2)) 		   
+      (:p (if (> 1 2) 
+	      "other choice"
+	      "different choice"))
       (:footer :style "color: white; text-align: center; background:#444;" "&copy; 2013 Jacek Podkanski")))))
