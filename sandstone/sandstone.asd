@@ -14,9 +14,9 @@
   :depends-on (:restas 
 	       :cl-who)
   :components ((:file "packages")
-	       (:file "index" :depends-on ("packages"))
-	       (:file "about-me" :depends-on ("packages"))
-	       (:file "sandstone" :depends-on ("index" "packages")))
+	       (:module "views"
+			:components ((:file "application")))
+	       (:file "sandstone" :depends-on ("views" "packages")))
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
