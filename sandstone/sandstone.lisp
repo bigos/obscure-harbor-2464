@@ -1,11 +1,17 @@
-(restas:define-module #:sandstone)
+
+(restas:define-module #:sandstone
+    (:use #:cl #:iter)
+  )
 
 (in-package #:sandstone)
 
-(restas:define-route index ("/") 
+(defun view ()
   (who:with-html-output-to-string (out)
     (:html
-     (:body
-      
+     (:body      
       (:h1 :id "heading" "Hello World")
-      (:p :class "message"  "Hi everyone.")))))
+      (:p :class "message"  "Hi everyone, we have success at last.")))))
+
+(restas:define-route index ("/") 
+  (view)
+  )
