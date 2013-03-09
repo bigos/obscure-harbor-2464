@@ -1,6 +1,6 @@
 (in-package #:sandstone)
 
-(defun view-about-me ()
+(defun view-about-me (arg1)
   (who:with-html-output-to-string (out)
     (:html
      (:body    
@@ -11,4 +11,5 @@
       (:hr)
       (:h1 "About me")
       (:p "Some info about me will go here.")
+      (:p (who:fmt "~s" arg1))
       (:footer :style "color: white; text-align: center; background:#444;" "&copy; 2013 Jacek Podkanski")))))

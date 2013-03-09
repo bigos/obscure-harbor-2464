@@ -1,6 +1,6 @@
 (in-package #:sandstone)
 
-(defun view ()
+(defun view (arg1)
   (who:with-html-output-to-string (out)
     (:html
      (:body  
@@ -11,4 +11,5 @@
       (:hr)    
       (:h1 :id "heading" "Hello Lisp World")
       (:p :class "message"  "Hi everybody, we have success at last. I've made restas run on Heroku.")
+      (:p (who:fmt "~s" arg1))
       (:footer :style "color: white; text-align: center; background:#444;" "&copy; 2013 Jacek Podkanski")))))
