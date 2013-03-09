@@ -15,6 +15,7 @@
 	       :cl-who)
   :components ((:file "packages")
 	       (:file "index" :depends-on ("packages"))
+	       (:file "about-me" :depends-on ("packages"))
 	       (:file "sandstone" :depends-on ("index" "packages")))
   :description ""
   :long-description
