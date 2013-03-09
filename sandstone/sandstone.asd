@@ -13,7 +13,8 @@
   :license ""
   :depends-on (:restas 
 	       :cl-who)
-  :components ((:file "sandstone"))
+  :components ((:file "index")
+	       (:file "sandstone" :depends-on ("index")))
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
