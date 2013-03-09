@@ -1,7 +1,5 @@
 
-(restas:define-module #:sandstone
-    (:use #:cl #:iter)
-  )
+
 
 (in-package #:sandstone)
 

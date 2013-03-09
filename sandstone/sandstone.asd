@@ -13,8 +13,9 @@
   :license ""
   :depends-on (:restas 
 	       :cl-who)
-  :components ((:file "index")
-	       (:file "sandstone" :depends-on ("index")))
+  :components ((:file "packages")
+	       (:file "index" :depends-on ("packages"))
+	       (:file "sandstone" :depends-on ("index" "packages")))
   :description ""
   :long-description
   #.(with-open-file (stream (merge-pathnames
